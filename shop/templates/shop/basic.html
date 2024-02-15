@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <title>{% block title%} {% endblock %}</title>
+     <style>
+       {% block css %} 
+           /* Add your other styles here */
+
+         .footer-padding {
+                  padding: 200px;
+          }
+          #footer {
+                 background-color:saddlebrown;
+                 color: white;
+          }
+          h4{
+            color:black;
+          }
+
+       {% endblock %}
+  </style>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="/shop"><b>ShopingWeb</b></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/shop">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/shop/about">About Us</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="/shop/tracker">Tracker</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="/blog">Blog</a>
+      </li>
+
+       <li class="nav-item">
+        <a class="nav-link" href="/shop/contact">Contact Us</a>
+      </li>
+
+
+    </ul>
+    <form method='get' action='/shop/search/' class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search" id="search">
+      <button class="btn btn-outline-success my-2 my-sm-0  btn-sm" type="submit">Search</button>
+    </form>
+    <button type="button" class="btn btn-secondary mx-2  btn-sm" id="popcart" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-content="Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus.">
+
+
+  Cart(<span id="cart">0</span>)
+</button>
+  </div>
+</nav>
+  {% block body %} 
+
+
+  {% endblock %}
+
+
+<footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500" class="aos-init aos-animate">
+<div class="footer-top my-lg-4">
+  <div class="container">
+    <div class="row">
+     <div class="col-lg-3 col-md-6 footer-links">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><i class="bx bx-chevron-right"></i> <a href="/shop" style="color:white;">Home</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="/shop/about" style="color:white;">About us</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 footer-links">
+        <h4>Our Products</h4>
+        <ul>
+          <li><i class="bx bx-chevron-right"></i> <a href="ecollege-web.php"style="color:white;">E-College - Faculty Portal</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="ecollege-naac.php"style="color:white;">E-College - Innovatieve Tools</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="schooltech.php"style="color:white;">School-Tech</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="easycount.php"style="color:white;">Easycount</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="hostel.php"style="color:white;">Hostel Management</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 footer-links">
+        <h4>Our Services</h4>
+        <ul>
+          <li><i class="bx bx-chevron-right"></i> <a href="services.php"style="color:white;">Web Development</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="services.php"style="color:white;">App Development</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="services.php"style="color:white;">Software Testing</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="services.php"style="color:white;">Software Security</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="services.php"style="color:white;">More Services</a></li> 
+        </ul>
+      </div>
+
+      
+
+      <div class="col-lg-3 col-md-6 footer-contact">
+        <h4>Contact Us</h4>
+        <p>Vittal Rukhmai Palace, 4th floor Laxmi Nagar, Nagpur, 440022<br>
+        <hr>
+          <strong>Phone:</strong> +91 9112244331 / 9112244332 
+          <hr>
+          <strong>Email:</strong> bismitechnologys@gmail.com
+        </p>
+
+      </div>
+
+   </div>
+    <div class="row text-center">
+      <div class="col-lg-4 col-md-6 social-links">
+          <a href="mailto:contact@softfeat.in" class="mail-send"><i class="bx bx-mail-send"></i></a>
+          <a href="https://twitter.com/SoftfeatTech" target="_blank" rel="noopener" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/softfeat" target="_blank" rel="noopener" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://www.facebook.com/softfeattech" target="_blank" rel="noopener" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://instagram.com/softfeat_Tech" target="_blank" rel="noopener" class="instagram"><i class="bx bxl-instagram"></i></a>
+        </div>
+
+        
+
+      <div class="col-lg-4 col-md-4 my-2 ">
+      Ⓒ  <a href="https://bismitechnology.com/about-us/" style="color:darkblue;">https://bismitechnology.com/</a> | All Rights Reserved, 2024
+      </div>
+        
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    {% block js %} 
+      
+
+
+    {% endblock %}
+  </body>
+</html>
