@@ -4,7 +4,6 @@ from math import ceil
 import json
 from django.views.decorators.csrf import csrf_exempt
 from PayTm import Checksum
-# Create your views here.
 from django.http import HttpResponse
 MERCHANT_KEY = 'WorldP64425807474247'
 
